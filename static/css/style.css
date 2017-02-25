@@ -73,7 +73,9 @@ img {
   top: 2.5%;
   left: 55%;
   width: 40%;
+  animation: rolling 3s linear infinite alternate;
 }
+
 .msg-container-3-2 {
   position: absolute;
   top: 35%;
@@ -84,7 +86,7 @@ img {
 .msg-container-3-3 {
   position: absolute;
   top: 42%;
-  left: 23%;
+  left: 25%;
   width: 54%;
   opacity: 0;
 }
@@ -103,6 +105,85 @@ img {
   opacity: 0;
 }
 
+
+.img-container-4-1 {
+  z-index: 11;
+  position: absolute;
+  top: 1%;
+  left: 28%;
+  width: 44%;
+}
+.img-container-4-2 {
+  z-index: 10;
+  position: absolute;
+  top: 16%;
+  left: 17.5%;
+  width: 64%;
+  animation: lighting 0.25s linear infinite alternate;
+}
+.msg-container-4-3 {
+  position: absolute;
+  top: 38%;
+  left: 23%;
+  width: 22%;
+  opacity: 0;
+}
+.msg-container-4-4 {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 56.5%;
+  opacity: 0;
+}
+.img-container-4-5 {
+  position: absolute;
+  top: 56.5%;
+  left: 32%;
+  width: 36%;
+  opacity: 0;
+}
+.msg-container-4-6 {
+  position: absolute;
+  top: 53%;
+  left: 65%;
+  width: 7.5%;
+  opacity: 0;
+}
+.msg-container-4-7 {
+  position: absolute;
+  top: 58%;
+  left: 17.5%;
+  width: 9%;
+  opacity: 0;
+}
+.msg-container-4-8 {
+  position: absolute;
+  top: 64%;
+  left: 21%;
+  width: 11%;
+  opacity: 0;
+}
+.msg-container-4-9 {
+  position: absolute;
+  top: 66%;
+  left: 70%;
+  width: 14%;
+  opacity: 0;
+}
+.msg-container-4-10 {
+  position: absolute;
+  top: 73.5%;
+  left: 68%;
+  width: 8.5%;
+  opacity: 0;
+}
+.msg-container-4-11 {
+  position: absolute;
+  top: 76%;
+  left: 20%;
+  width: 11%;
+  opacity: 0;
+}
 
 
 .img-container-6 {
@@ -129,4 +210,16 @@ img {
 @keyframes blink {
   to { opacity: 1; }
   from { opacity: 0.15; }
+}
+/*  Third Section  */
+@keyframes rolling {
+  to {
+    left: 15%;
+    transform: rotate(-20deg);
+  }
+}
+/*  Fourth Section  */
+@keyframes lighting {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

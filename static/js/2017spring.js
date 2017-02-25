@@ -1,13 +1,5 @@
 $(function() {
   function orderedAnimation (objs, comm, time) {
-    /*obj.animate(comm, time || "normal", function() {
-      console.log(obj.next().length);
-      if (obj.next().length) {
-        console.log("log");
-        orderedAnimation(obj.next(), comm, time);
-      }
-    });*/
-
     objs.eq(0).animate(comm, time || "normal", function() {
       if (objs.eq(1)) {
         orderedAnimation(objs.slice(1, objs.length), comm, time);
@@ -32,8 +24,16 @@ $(function() {
       afterLoad: function (anchorLink, index) {
         if (index === 3) {
           var msgs = $(this).find("img").slice(1, 5).parent();
-          console.log("afterload");
-          orderedAnimation(msgs, { opacity: 0.8 }, 650);
+          orderedAnimation(msgs, { opacity: 1 }, 550);
+        }
+
+        if (index === 4) {
+          var msgs_4 = $(this).find("img").slice(2, 5).parent(),
+              msg_details_4 = $(this).find("img").slice(5, 11).parent();
+          orderedAnimation(msgs_4, { opacity: 1 }, 600);
+          setTimeout(function() {
+            orderedAnimation(msg_details_4, {opacity: 1}, 300);
+          }, 1650);
         }
       }
     });

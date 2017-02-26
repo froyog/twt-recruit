@@ -186,6 +186,36 @@ img {
 }
 
 
+.msg-container-5-1 {
+  position: absolute;
+  top: 31%;
+  left: 23.5%;
+  width: 22%;
+}
+.msg-container-5-2 {
+  position: absolute;
+  top: 36%;
+  left: 27%;
+}
+  .coder-desc {
+    color: white;
+    font-size: 17px;
+    border-right: .1em solid;
+    width: 11em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(11, end),
+               blink-caret .5s step-end infinite alternate;
+  }
+  .coder-desc-2 {
+    width: 16em;
+    animation: typing 4s steps(16, end),
+               blink-caret .5s step-end infinite alternate;
+  }
+  @keyframes typing { from { width: 0; } }
+  @keyframes blink-caret { 50% { border-color: transparent;} }
+
+
 .img-container-6 {
   position: absolute;
   top: 77.9014%;
